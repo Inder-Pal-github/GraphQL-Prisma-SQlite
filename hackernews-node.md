@@ -482,3 +482,12 @@ const server = new ApolloServer({
   }
 });
 ```
+- add filtering
+    - use where keyword in the resolver for query
+    - and defined the parameter in the schema as well for query type. ( make it non-required)
+- Pagination
+    - Limit-Offset : start index from where we want to get the documents is called offset and limit is the number of documents required.
+    - cursor-based : 
+- sorting
+ 
+    

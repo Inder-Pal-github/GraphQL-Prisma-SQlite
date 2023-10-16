@@ -9,6 +9,9 @@ async function feed(parent, args, context, info) {
     : {}
   const links = await context.prisma.link.findMany({
     where,
+    skip:args.skip,
+    take:args.take,
+    orderBy:args.orderBy
   })
 
   return links
